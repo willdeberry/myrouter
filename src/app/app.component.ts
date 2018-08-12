@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NetgearRouter } from 'netgear';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'myrouter';
+export class AppComponent implements OnInit {
+    title = 'myrouter';
+
+    constructor(
+        private router: NetgearRouter
+    ) {}
+
+    ngOnInit() {
+        console.log('ngOnInit');
+    }
 }

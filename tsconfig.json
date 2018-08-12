@@ -13,6 +13,10 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+        "https": [ "./src/app/patch.js" ],
+        "http": [ "./src/app/patch.js" ]
+    },
     "lib": [
       "es2017",
       "dom"
