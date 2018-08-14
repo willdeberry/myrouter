@@ -1,0 +1,6 @@
+.info-card,
+.device-card {
+    min-width: 300px;
+    max-width: 350px;
+    margin: 5px;
+}
